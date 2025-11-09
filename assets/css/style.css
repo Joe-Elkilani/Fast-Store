@@ -4,13 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Cairo", sans-serif;
+  @apply bg-white text-gray-900;
+}
+
 ::selection {
   background-color: #1e3a8a;
   color: #06b6d4;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -22,7 +23,6 @@ h6 {
   font-family: "Playwrite DE SAS", cursive !important;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -41,4 +41,96 @@ h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #2563eb, #0891b2);
+}
+
+@layer utilities {
+  .swiper-slide-active .text {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    transition: all 0.9s ease-out;
+  }
+
+  .swiper-slide-prev .text {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 0.9s ease-in;
+  }
+
+  .swiper-slide-next .text {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 0.9s ease-in;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.progress-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #1d4ed8;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.star-icon {
+  transition: all 0.2s ease;
+}
+
+.star-icon:hover {
+  transform: scale(1.2);
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0;
+  }
+
+  .program-card {
+    @apply bg-white rounded-xl cursor-pointer shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2 cursor-pointer rounded-lg bg-blue-600 text-white hover:scale-105 font-medium text-sm hover:bg-blue-800 transition-all duration-500;
+  }
+
+  .social-icon {
+    @apply w-9 h-9 flex items-center justify-center rounded-full border border-gray-400 text-gray-300 hover:text-white transition-all duration-300;
+  }
 }

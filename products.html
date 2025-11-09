@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fast Store - Best deals and top quality products"
+    />
+    <meta name="author" content="Joe Elkilani, Ahmed Saber" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, E-commerce, Online Store"
+    />
+    <title>Fast Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="public/imgs/logo2.png" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  </head>
+
+  <body class="m-0 p-0 min-h-dvh">
+    <header
+      class="bg-[#f5f7fa] flex justify-center shadow-sm fixed top-0 left-0 w-full z-50"
+    >
+      <div
+        class="container max-w-7xl w-full px-6 flex justify-between items-center py-[15px]"
+      >
+        <div class="logo w-[100px] overflow-hidden">
+          <img
+            class="w-full bg-contain"
+            src="public/imgs/logo2.png"
+            loading="lazy"
+            alt="Fast Store Logo"
+          />
+        </div>
+
+        <nav>
+          <ul class="flex items-center gap-6">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li>
+              <a href="services.html#services" class="nav-link">Services</a>
+            </li>
+
+            <li class="relative group">
+              <button id="programsBtn" class="nav-link">
+                Programs <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul
+                id="programsMenu"
+                class="absolute left-0 mt-2 bg-white shadow-md rounded-lg w-40 py-2 opacity-0 invisible transition-opacity duration-300"
+              >
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p2.html"
+                    >Program 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p3.html"
+                    >Program 3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p4.html"
+                    >Program 4</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p5.html"
+                    >Program 5</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="index.html#clints" class="nav-link">Clients</a></li>
+            <li><a href="offers.html" class="nav-link">Offers</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="products" class="pt-[150px] pb-20 bg-gray-50">
+        <div class="container mx-auto w-[85%]">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+              Our <span class="text-blue-600">Products</span>
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base">
+              Discover our latest deals and top-quality items carefully selected
+              for you.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/xpk200l_.jpg29_09_2022_06_03_58.jpg"
+                alt="Product 1"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  Xprinter k200l
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1500</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/235%20b.jpg29_09_2022_06_03_07.jpg"
+                alt="Product 2"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  xprinter 235B
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1500</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/XP160N%20(1).jpg29_09_2022_05_01_51.jpg"
+                alt="Product 3"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  xprinter 160N
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1500</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/%d8%a7%d8%b3%d9%83%d8%a7%d9%86%d8%b1_.jpg29_09_2022_06_47_13.jpg"
+                alt="Product 4"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  Data logic qw2100
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1200</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/41g0nFFiXGS.__AC_SX300_SY300_QL70_ML2_.jpg29_09_2022_06_30_52.jpg"
+                alt="Product 5"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  درج نقدية
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1200</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/XPS200M.jpg29_09_2022_06_20_11.jpg"
+                alt="Product 6"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  Xprinter S200M
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1500</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/1573b94d-0d31-4565-81f2-a2a214f8dbfe.jpg29_09_2022_07_03_32.jpg"
+                alt="Product 7"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">pc</h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1500</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Product 8"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  Keyboard
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$1200</p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="http://softatsolutionss-001-site9.itempurl.com/assets/images/%d8%b4%d8%a7%d8%b4%d9%87.jpg29_09_2022_07_20_48.jpg"
+                alt="Product 9"
+                class="w-full h-52 object-contain"
+                loading="lazy"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  شاشه ديل 19 بوصة
+                </h3>
+                <p class="text-blue-600 font-bold text-lg mb-4">$500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="bg-gray-900 text-white py-14">
+        <div class="container max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="space-y-4">
+              <img
+                class="w-32 h-auto"
+                src="public/imgs/logo2.png"
+                loading="lazy"
+                alt="Fast Store Logo"
+              />
+              <p class="text-gray-300 text-sm leading-relaxed">
+                We are specialists in a wide range of commercial software
+                including pharmacies, restaurants, clothing stores,
+                supermarkets, and more. With over 18 years of experience, our
+                expert team provides professional solutions that elevate your
+                business.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg mb-4 text-blue-400">
+                Quick Navigation
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#home" class="hover:text-blue-400 transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#services" class="hover:text-blue-400 transition"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#products" class="hover:text-blue-400 transition"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a href="#offers" class="hover:text-blue-400 transition"
+                    >Offers</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" class="hover:text-blue-400 transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+
+              <div class="mt-5">
+                <ul class="flex items-center gap-3">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-icon hover:bg-blue-600 hover:border-blue-600"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/"
+                      class="social-icon hover:bg-blue-400 hover:border-blue-400"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-icon hover:bg-pink-600 hover:border-pink-600"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-icon hover:bg-blue-700 hover:border-blue-700"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg mb-4 text-blue-400">
+                Contact Information
+              </h3>
+              <p class="text-gray-300 text-sm">
+                Menofia, Egypt<br />Shibin el Kom – Shubra Bas
+              </p>
+              <ul class="mt-4 space-y-3 text-gray-300 text-sm">
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-phone text-blue-500"></i>
+                  <a
+                    class="hover:text-blue-400 transition"
+                    href="tel:+20482297419"
+                    >0482297419</a
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-mobile-screen-button text-blue-500"></i>
+                  <a
+                    class="hover:text-blue-400 transition"
+                    href="tel:+201032438153"
+                    >+201032438153</a
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-mobile-screen-button text-blue-500"></i>
+                  <a
+                    class="hover:text-blue-400 transition"
+                    href="tel:+201094012560"
+                    >+201094012560</a
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-envelope text-blue-500"></i>
+                  <a
+                    class="hover:text-blue-400 transition"
+                    href="mailto:Yousef@gmail.com"
+                    >Yousef@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-lg overflow-hidden h-[250px] sm:h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13743.08760593017!2d30.927681657673546!3d30.55574794471854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d5091d779ee3%3A0x6b8d2a9f26558dde!2sShubra%20Bas%2C%20Shibin%20el%20Kom%2C%20Menofia%20Governorate!5e0!3m2!1sen!2seg!4v1761502394628!5m2!1sen!2seg"
+                class="w-full h-full"
+                allowfullscreen=""
+                loading="lazy"
+                style="border: 0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-gray-900 text-gray-300 py-5 text-center border-t border-gray-700"
+    >
+      <p
+        class="text-sm tracking-wide hover:text-blue-500 transition-colors duration-300"
+      >
+        Copyright &copy; 2025 By
+        <span class="font-semibold">Yousef Elkilani</span>
+      </p>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="fixed bottom-5 right-5 hidden bg-blue-600 text-white px-4 py-3 rounded-full text-lg font-bold shadow-lg transition-all duration-300 hover:bg-blue-800"
+    >
+      ↑
+    </button>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

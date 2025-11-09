@@ -3,28 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Lorem ipsum dolor sit amet." />
-    <meta name="auther" content="Joe Elkilani, Ahmed Saber" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="Fast Store - Best deals and top quality products"
+    />
+    <meta name="author" content="Joe Elkilani, Ahmed Saber" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, E-commerce, Online Store"
+    />
     <title>Fast Store</title>
-    <!-- Lato Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome Library -->
+
+    <link rel="icon" href="public/imgs/logo2.png" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
-    <!-- Main Css Styles Files -->
     <link rel="stylesheet" href="assets/css/output.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
   </head>
+
   <body class="min-h-dvh m-0 p-0">
     <header
       class="bg-[#f5f7fa] flex justify-center shadow-sm fixed top-0 left-0 w-full z-50"
@@ -32,196 +40,180 @@
       <div
         class="container max-w-7xl w-full px-6 flex justify-between items-center py-[15px]"
       >
-        <div class="logo">
-          <div class="w-[100px] overflow-hidden">
-            <img class="w-full bg-contain" src="public/imgs/logo2.png" alt="" />
-          </div>
+        <div class="logo w-[100px] overflow-hidden">
+          <img
+            class="w-full bg-contain"
+            src="public/imgs/logo2.png"
+            loading="lazy"
+            alt="Fast Store Logo"
+          />
         </div>
+
         <nav>
           <ul class="flex items-center gap-6">
-            <li>
-              <a
-                href="#home"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+
+            <li class="relative group">
+              <button id="programsBtn" class="nav-link">
+                Programs <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul
+                id="programsMenu"
+                class="absolute left-0 mt-2 bg-white shadow-md rounded-lg w-40 py-2 opacity-0 invisible transition-opacity duration-300"
               >
-                Home
-              </a>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p2.html"
+                    >Program 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p3.html"
+                    >Program 3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p4.html"
+                    >Program 4</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    href="p5.html"
+                    >Program 5</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <a
-                href="#about"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#programs"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                Programs
-              </a>
-            </li>
-            <li>
-              <a
-                href="#products"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                Products
-              </a>
-            </li>
-            <li>
-              <a
-                href="#clients"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                Clients
-              </a>
-            </li>
-            <li>
-              <a
-                href="#offers"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                Offers
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="relative text-lg font-semibold text-black capitalize px-2 py-2 transition-all duration-300 hover:text-blue-500 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[3px] before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-[90%] hover:before:left-0"
-              >
-                Contact
-              </a>
-            </li>
+
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="#clints" class="nav-link">Clients</a></li>
+            <li><a href="offers.html" class="nav-link">Offers</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-      <!-- Home Section -->
       <section id="home" class="swiper hero-slider h-screen w-full">
         <div class="swiper-wrapper">
           <div
             class="swiper-slide h-full w-full bg-cover bg-center flex justify-center items-center pt-[78px]"
             style="
-              background-image: url('https://plus.unsplash.com/premium_photo-1671751036888-9afb3d6cad2b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZyb250JTIwZW5kfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600');
+              background-image: url('https://plus.unsplash.com/premium_photo-1671751036888-9afb3d6cad2b?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=600');
             "
           >
             <div class="absolute inset-0 bg-black/40"></div>
-
             <div
               class="relative container h-full w-[80%] mx-auto flex items-center"
             >
-              <div class="text">
-                <h3 class="text-white text-2xl">Lorem, ipsum dolor.</h3>
+              <div class="text opacity-0 translate-x-20">
+                <h3 class="text-white text-2xl">Welcome to Fast Store</h3>
                 <h2
                   id="element"
-                  class="text-3xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown"
+                  class="text-3xl md:text-6xl font-extrabold text-white drop-shadow-lg"
                 ></h2>
                 <p
-                  class="mt-4 text-lg md:text-[18px] font-medium text-white drop-shadow-md animate__animated animate__fadeInUp"
+                  class="mt-4 text-lg md:text-[18px] font-medium text-white drop-shadow-md"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus corporis non distinctio accusamus!
+                  Discover amazing products with unbeatable prices and
+                  exceptional quality that exceeds your expectations.
                 </p>
                 <div class="flex gap-3 mt-6 items-center">
                   <button
                     class="text-white border-t-2 border-white p-3 text-2xl font-bold hover:text-blue-500 hover:border-blue-500 transition-all duration-500"
                   >
-                    Lorem, ipsum.
+                    Shop Now
                   </button>
                   <button
                     class="text-white border-t-2 border-white p-3 text-2xl font-bold hover:text-blue-500 hover:border-blue-500 transition-all duration-500"
                   >
-                    Lorem, ipsum.
+                    Learn More
                   </button>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="swiper-slide h-full w-full bg-cover bg-center flex justify-center items-center pt-[78px]"
             style="
-              background-image: url('https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764');
+              background-image: url('https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&q=80&w=764');
             "
           >
-            <!-- Layer for overlay to enhance text visibility -->
             <div class="absolute inset-0 bg-black/40"></div>
-
             <div
               class="relative container h-full w-[80%] mx-auto flex items-center"
             >
-              <div class="text">
-                <h3 class="text-white text-2xl">Lorem, ipsum dolor.</h3>
+              <div class="text opacity-0 translate-x-20">
+                <h3 class="text-white text-2xl">Quality Products</h3>
                 <h2
                   id="element2"
-                  class="text-3xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown"
+                  class="text-3xl md:text-6xl font-extrabold text-white drop-shadow-lg"
                 ></h2>
                 <p
-                  class="mt-4 text-lg md:text-[18px] font-medium text-white drop-shadow-md animate__animated animate__fadeInUp"
+                  class="mt-4 text-lg md:text-[18px] font-medium text-white drop-shadow-md"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus corporis non distinctio accusamus!
+                  Browse our extensive collection of premium products designed
+                  to meet your every need.
                 </p>
                 <div class="flex gap-3 mt-6 items-center">
                   <button
                     class="text-white border-t-2 border-white p-3 text-2xl font-bold hover:text-blue-500 hover:border-blue-500 transition-all duration-500"
                   >
-                    Lorem, ipsum.
+                    Explore
                   </button>
                   <button
                     class="text-white border-t-2 border-white p-3 text-2xl font-bold hover:text-blue-500 hover:border-blue-500 transition-all duration-500"
                   >
-                    Lorem, ipsum.
+                    Contact Us
                   </button>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="swiper-slide h-full w-full bg-cover bg-center flex justify-center items-center pt-[78px]"
             style="
-              background-image: url('https://images.unsplash.com/photo-1609659901102-176a8f275b15?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974');
+              background-image: url('https://images.unsplash.com/photo-1609659901102-176a8f275b15?auto=format&fit=crop&q=80&w=1974');
             "
           >
-            <!-- Layer for overlay to enhance text visibility -->
             <div class="absolute inset-0 bg-black/40"></div>
-
             <div
               class="relative container h-full w-[80%] mx-auto flex items-center"
             >
-              <div class="text">
-                <h3 class="text-white text-2xl">Lorem, ipsum dolor.</h3>
+              <div class="text opacity-0 translate-x-20">
+                <h3 class="text-white text-2xl">Trusted by Thousands</h3>
                 <h2
                   id="element3"
-                  class="text-3xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown"
+                  class="text-3xl md:text-6xl font-extrabold text-white drop-shadow-lg"
                 ></h2>
                 <p
-                  class="mt-4 text-lg md:text-[18px] font-medium text-white drop-shadow-md animate__animated animate__fadeInUp"
+                  class="mt-4 text-lg md:text-[18px] font-medium text-white drop-shadow-md"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus corporis non distinctio accusamus!
+                  Join our community of satisfied customers who trust us for
+                  quality and reliability.
                 </p>
                 <div class="flex gap-3 mt-6 items-center">
                   <button
                     class="text-white border-t-2 border-white p-3 text-2xl font-bold hover:text-blue-500 hover:border-blue-500 transition-all duration-500"
                   >
-                    Lorem, ipsum.
+                    Get Started
                   </button>
                   <button
                     class="text-white border-t-2 border-white p-3 text-2xl font-bold hover:text-blue-500 hover:border-blue-500 transition-all duration-500"
                   >
-                    Lorem, ipsum.
+                    View Offers
                   </button>
                 </div>
               </div>
@@ -230,30 +222,29 @@
         </div>
       </section>
 
-      <!-- About Section -->
-      <section class="about pt-[100px] flex justify-center" id="about">
+      <section id="about" class="about pt-[100px] flex justify-center">
         <div class="container w-[80%] flex flex-col items-center text-center">
-          <div class="text font-extrabold">
+          <div class="text font-extrabold mb-8">
             <h2 class="text-5xl">
-              <span class="text-3xl">Lorem, ipsum dolor.</span>
-              <br />
-              <span class="text-blue-600">Lorem ipsum dolor sit.</span>Lorem
-              <br />
-              ipsum dolor sit amet.
+              <span class="text-3xl">About Fast Store</span><br />
+              <span class="text-blue-600">Your Trusted Partner</span><br />
+              For Quality Products
             </h2>
-            <a href="#" class="text-blue-700"
-              >Lorem, ipsum.<i class="fa-solid fa-chevron-right"></i
-            ></a>
+            <a href="#" class="text-blue-700 hover:text-blue-900 transition">
+              Learn More <i class="fa-solid fa-chevron-right"></i>
+            </a>
           </div>
           <div class="img">
             <img
-              class="w-[1430px] h-[475px]"
+              class="w-full max-h-[500px] object-cover rounded-lg shadow-lg"
               src="public/imgs/About.jpg"
-              alt=""
+              loading="lazy"
+              alt="About Fast Store"
             />
           </div>
         </div>
       </section>
+
       <section class="bg-[#f5f7fa] py-16">
         <div class="container max-w-7xl mx-auto px-6">
           <div class="mb-12">
@@ -261,157 +252,337 @@
               class="text-3xl md:text-4xl font-bold text-blue-600 flex items-center gap-2"
             >
               <i class="fa-solid fa-lightbulb text-amber-500 text-4xl"></i>
-              Lorem ipsum
+              Our Programs
             </h2>
-            <h5 class="text-gray-600 text-lg mt-2">Lorem ipsum dolor sit.</h5>
+            <h5 class="text-gray-600 text-lg mt-2">
+              Choose the perfect solution for your business
+            </h5>
           </div>
+
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            <div
-              class="bg-white rounded-xl cursor-pointer shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
+            <div class="program-card">
               <img
-                src="public/imgs/P1.png"
-                alt=""
+                src="public/imgs/p1.png"
+                alt="Program 1"
+                loading="lazy"
                 class="w-32 h-32 object-contain mb-4 hover:scale-125 transition-transform duration-500"
               />
-              <h3 class="text-xl font-semibold text-gray-800 mb-3">
-                Lorem, ipsum.
-              </h3>
-              <button
-                class="px-6 py-2 cursor-pointer rounded-lg bg-blue-600 text-white hover:scale-105 font-medium text-sm hover:bg-blue-800 transition-all duration-500"
-              >
-                Lorem, ipsum.
-              </button>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Pharmacy</h3>
+              <button class="btn-primary">View Details</button>
             </div>
-            <div
-              class="bg-white rounded-xl cursor-pointer shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
+
+            <div class="program-card">
               <img
                 src="public/imgs/p2.png"
-                alt=""
+                alt="Program 2"
+                loading="lazy"
                 class="w-32 h-32 object-contain mb-4 hover:scale-125 transition-transform duration-500"
               />
               <h3 class="text-xl font-semibold text-gray-800 mb-3">
-                Lorem, ipsum.
+                Restaurant
               </h3>
-              <button
-                class="px-6 py-2 cursor-pointer rounded-lg bg-blue-600 text-white hover:scale-105 font-medium text-sm hover:bg-blue-800 transition-all duration-500"
-              >
-                Lorem, ipsum.
-              </button>
+              <button class="btn-primary">View Details</button>
             </div>
-            <div
-              class="bg-white rounded-xl cursor-pointer shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
+
+            <div class="program-card">
               <img
                 src="public/imgs/p3.png"
-                alt=""
+                alt="Program 3"
+                loading="lazy"
                 class="w-32 h-32 object-contain mb-4 hover:scale-125 transition-transform duration-500"
               />
               <h3 class="text-xl font-semibold text-gray-800 mb-3">
-                Lorem, ipsum.
+                Retail Store
               </h3>
-              <button
-                class="px-6 py-2 cursor-pointer rounded-lg bg-blue-600 hover:scale-105 text-white font-medium text-sm hover:bg-blue-800 transition-all duration-500"
-              >
-                Lorem, ipsum.
-              </button>
+              <button class="btn-primary">View Details</button>
             </div>
-            <div
-              class="bg-white rounded-xl cursor-pointer shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
+
+            <div class="program-card">
               <img
                 src="public/imgs/p4.png"
-                alt=""
+                alt="Program 4"
+                loading="lazy"
                 class="w-32 h-32 object-contain mb-4 hover:scale-125 transition-transform duration-500"
               />
               <h3 class="text-xl font-semibold text-gray-800 mb-3">
-                Lorem, ipsum.
+                Supermarket
               </h3>
-              <button
-                class="px-6 py-2 cursor-pointer rounded-lg bg-blue-600 text-white hover:scale-105 font-medium text-sm hover:bg-blue-800 transition-all duration-500"
-              >
-                Lorem, ipsum.
-              </button>
+              <button class="btn-primary">View Details</button>
             </div>
-            <div
-              class="bg-white rounded-xl cursor-pointer shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
+
+            <div class="program-card">
               <img
                 src="public/imgs/p5.png"
-                alt=""
+                alt="Program 5"
+                loading="lazy"
                 class="w-32 h-32 object-contain mb-4 hover:scale-125 transition-transform duration-500"
               />
               <h3 class="text-xl font-semibold text-gray-800 mb-3">
-                Lorem, ipsum.
+                Beauty Center
               </h3>
-              <button
-                class="px-6 py-2 cursor-pointer rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-800 transition-all hover:scale-105 duration-500"
-              >
-                Lorem, ipsum.
-              </button>
+              <button class="btn-primary">View Details</button>
             </div>
           </div>
         </div>
       </section>
+
       <section
         class="relative bg-cover bg-center bg-no-repeat h-[450px] md:h-[550px] flex items-center"
         style="background-image: url('public/imgs/hero1.jpg')"
       >
-        <!-- Overlay -->
         <div class="absolute inset-0 bg-black/60"></div>
-
         <div
           class="relative container max-w-6xl mx-auto px-6 text-white space-y-4 md:space-y-6"
         >
           <h3
             class="uppercase text-blue-400 tracking-widest font-semibold text-sm md:text-base"
           >
-            Lorem ipsum dolor sit amet
+            Professional Solutions
           </h3>
-
           <h2
             class="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Transform Your Business With Our Software Solutions
           </h2>
-
           <p class="max-w-2xl text-sm md:text-lg text-gray-200 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis numquam porro et accusamus dolore debitis aliquam saepe
-            tempore repudiandae a vitae ipsam mollitia quo quaerat recusandae
-            odio, placeat aperiam.
+            With over 18 years of experience, we provide cutting-edge software
+            solutions tailored to your business needs. Our expert team is
+            dedicated to helping you succeed.
           </p>
-
           <button
             class="px-8 py-3 bg-blue-600 mx-auto block rounded-lg font-medium text-sm md:text-base transition-all duration-500 hover:bg-blue-700 hover:shadow-xl hover:scale-105"
           >
-            Lorem, ipsum.
+            Get Started Now
           </button>
         </div>
       </section>
+
+      <section class="py-16">
+        <div class="container mx-auto w-full px-5 md:w-[80%] text-center">
+          <h3 class="text-3xl font-bold mb-10">لماذا تختارنا؟</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="flex flex-col items-center">
+              <i
+                class="fa-solid fa-hand-holding-dollar text-4xl text-blue-700 mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2">عروض التمويل الخاصة</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                لدينا قسم المالية خالية من الإجهاد التي يمكن أن تجد الحلول
+                المالية لتوفير المال.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <i class="fa-solid fa-gem text-4xl text-blue-700 mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">
+                وكالة السيارات الموثوقة
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                لدينا قسم المالية خالية من الإجهاد التي يمكن أن تجد الحلول
+                المالية لتوفير المال.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <i class="fa-solid fa-tags text-4xl text-blue-700 mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">التسعير الشفاف</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                لدينا قسم المالية خالية من الإجهاد التي يمكن أن تجد الحلول
+                المالية لتوفير المال.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <i class="fa-solid fa-car-side text-4xl text-blue-700 mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">خدمة السيارات الخبيرة</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                لدينا قسم المالية خالية من الإجهاد التي يمكن أن تجد الحلول
+                المالية لتوفير المال.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-gray-50" id="clints">
+        <div class="container mx-auto w-full px-5 md:w-[70%] text-center">
+          <h3
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 relative inline-block"
+          >
+            آراء عملائنا
+            <span
+              class="absolute bottom-[-8px] left-1/2 -translate-x-1/2 w-16 h-[3px] bg-blue-700 rounded-full"
+            ></span>
+          </h3>
+
+          <div
+            id="testimonial"
+            class="bg-white p-8 md:p-10 rounded-2xl shadow-lg flex flex-col items-center hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="relative mb-4">
+              <img
+                id="clientImage"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Client"
+                class="w-24 h-24 rounded-full object-cover border-4 border-blue-100"
+              />
+              <div
+                class="absolute -bottom-2 -right-2 bg-blue-700 text-white rounded-full w-10 h-10 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-quote-right text-sm"></i>
+              </div>
+            </div>
+
+            <h4 id="clientName" class="text-xl font-bold text-gray-800 mb-2">
+              محمد علي
+            </h4>
+            <div id="clientStars" class="flex text-yellow-400 mb-4 gap-1"></div>
+            <p
+              id="clientText"
+              class="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl"
+            >
+              تجربة رائعة جدًا! الخدمة ممتازة والأسعار مناسبة.
+            </p>
+          </div>
+
+          <div id="progressDots" class="flex gap-2 justify-center mt-6"></div>
+
+          <div class="flex justify-center gap-4 mt-8">
+            <button
+              id="prevBtn"
+              class="px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+              <span class="hidden sm:inline">السابق</span>
+            </button>
+            <button
+              id="nextBtn"
+              class="px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
+            >
+              <span class="hidden sm:inline">التالي</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-white">
+        <div
+          class="h-[60px] text-white flex justify-center items-center px-4 font-medium tracking-wide bg-blue-900 mb-10"
+        >
+          Request a Free Demo or Consultation
+        </div>
+
+        <div class="container mx-auto max-w-3xl px-6">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col">
+                <label class="font-semibold mb-2 text-gray-700"
+                  >Full Name <span class="text-red-600">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                  class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label class="font-semibold mb-2 text-gray-700"
+                  >Email Address <span class="text-red-600">*</span></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                  class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col">
+                <label class="font-semibold mb-2 text-gray-700"
+                  >Phone Number <span class="text-red-600">*</span></label
+                >
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  placeholder="+20 xxx xxx xxxx"
+                  required
+                  class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label class="font-semibold mb-2 text-gray-700"
+                  >Pharmacy Name <span class="text-red-600">*</span></label
+                >
+                <input
+                  type="text"
+                  class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="Your pharmacy name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <label class="font-semibold mb-2 text-gray-700"
+                >City <span class="text-red-600">*</span></label
+              >
+              <input
+                type="text"
+                name="city"
+                placeholder="Enter your city"
+                required
+                class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label class="font-semibold mb-2 text-gray-700">Message</label>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Tell us about your requirements..."
+                class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all resize-none"
+              ></textarea>
+            </div>
+
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="bg-blue-700 text-white px-10 py-3 rounded-lg hover:bg-blue-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
+              >
+                Submit Request <i class="fa-solid fa-paper-plane ml-2"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
       <section id="contact" class="bg-gray-900 text-white py-14">
         <div class="container max-w-7xl mx-auto px-6">
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            <!-- Company Info -->
             <div class="space-y-4">
               <img
                 class="w-32 h-auto"
                 src="public/imgs/logo2.png"
                 loading="lazy"
-                alt="Logo"
+                alt="Fast Store Logo"
               />
               <p class="text-gray-300 text-sm leading-relaxed">
                 We are specialists in a wide range of commercial software
                 including pharmacies, restaurants, clothing stores,
-                supermarkets, laundries, beauty centers, cosmetics, optics,
-                spare parts, paints and more. With more than 18 years of
-                experience, our expert team provides professional solutions that
-                elevate your business.
+                supermarkets, and more. With over 18 years of experience, our
+                expert team provides professional solutions that elevate your
+                business.
               </p>
             </div>
 
-            <!-- Quick Links (Optional) -->
             <div>
               <h3 class="font-semibold text-lg mb-4 text-blue-400">
                 Quick Navigation
@@ -443,39 +614,37 @@
                   >
                 </li>
               </ul>
+
               <div class="mt-5">
                 <ul class="flex items-center gap-3">
                   <li>
                     <a
                       href="https://www.facebook.com/"
-                      class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-400 text-gray-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-300"
+                      class="social-icon hover:bg-blue-600 hover:border-blue-600"
                     >
                       <i class="fab fa-facebook-f"></i>
                     </a>
                   </li>
-
                   <li>
                     <a
                       href="https://x.com/"
-                      class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-400 text-gray-300 hover:bg-blue-400 hover:border-blue-400 hover:text-white transition-all duration-300"
+                      class="social-icon hover:bg-blue-400 hover:border-blue-400"
                     >
                       <i class="fab fa-twitter"></i>
                     </a>
                   </li>
-
                   <li>
                     <a
                       href="https://www.instagram.com/"
-                      class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-400 text-gray-300 hover:bg-pink-600 hover:border-pink-600 hover:text-white transition-all duration-300"
+                      class="social-icon hover:bg-pink-600 hover:border-pink-600"
                     >
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
-
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/yousef-elkilani-234467369/"
-                      class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-400 text-gray-300 hover:bg-blue-700 hover:border-blue-700 hover:text-white transition-all duration-300"
+                      href="https://www.linkedin.com/"
+                      class="social-icon hover:bg-blue-700 hover:border-blue-700"
                     >
                       <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -484,7 +653,6 @@
               </div>
             </div>
 
-            <!-- Contact Info -->
             <div>
               <h3 class="font-semibold text-lg mb-4 text-blue-400">
                 Contact Information
@@ -498,44 +666,36 @@
                   <a
                     class="hover:text-blue-400 transition"
                     href="tel:+20482297419"
+                    >0482297419</a
                   >
-                    0482297419
-                  </a>
                 </li>
-
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-mobile-screen-button text-blue-500"></i>
                   <a
                     class="hover:text-blue-400 transition"
                     href="tel:+201032438153"
+                    >+201032438153</a
                   >
-                    +201032438153
-                  </a>
                 </li>
-
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-mobile-screen-button text-blue-500"></i>
                   <a
                     class="hover:text-blue-400 transition"
                     href="tel:+201094012560"
+                    >+201094012560</a
                   >
-                    +201094012560
-                  </a>
                 </li>
-
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-envelope text-blue-500"></i>
                   <a
                     class="hover:text-blue-400 transition"
                     href="mailto:Yousef@gmail.com"
+                    >Yousef@gmail.com</a
                   >
-                    Yousef@gmail.com
-                  </a>
                 </li>
               </ul>
             </div>
 
-            <!-- Google Map -->
             <div class="rounded-lg overflow-hidden h-[250px] sm:h-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13743.08760593017!2d30.927681657673546!3d30.55574794471854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d5091d779ee3%3A0x6b8d2a9f26558dde!2sShubra%20Bas%2C%20Shibin%20el%20Kom%2C%20Menofia%20Governorate!5e0!3m2!1sen!2seg!4v1761502394628!5m2!1sen!2seg"
@@ -549,6 +709,7 @@
         </div>
       </section>
     </main>
+
     <footer
       class="bg-gray-900 text-gray-300 py-5 text-center border-t border-gray-700"
     >
@@ -560,7 +721,16 @@
       </p>
     </footer>
 
-    <!-- Main Js Scripts File -->
+    <button
+      id="scrollToTopBtn"
+      class="fixed bottom-5 right-5 hidden bg-blue-600 text-white px-4 py-3 rounded-full text-lg font-bold shadow-lg transition-all duration-300 hover:bg-blue-800"
+    >
+      ↑
+    </button>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
